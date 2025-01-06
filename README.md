@@ -33,7 +33,7 @@ Start the server
 
 OR 
 
-Start the server using Makefile
+Start the server using Make
 
 ```
   make run
@@ -55,4 +55,5 @@ Only build the Container
 
 ### ShortenIt Client
 
-# **TODO**
+#### **TODO**
+See the [create-react-app README](/frontend/README.md) for now
