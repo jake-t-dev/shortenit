@@ -1,0 +1,29 @@
+{
+  "name": "shortenit",
+  "version": "1.0.0",
+  "description": "link shortener peer programming project using MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon internal/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jake-t-dev/shortenit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jake-t-dev/shortenit/issues"
+  },
+  "homepage": "https://github.com/jake-t-dev/shortenit#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
