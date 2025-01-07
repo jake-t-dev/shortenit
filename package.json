@@ -18,6 +18,9 @@
     "url": "https://github.com/jake-t-dev/shortenit/issues"
   },
   "homepage": "https://github.com/jake-t-dev/shortenit#readme",
+  "nodemonConfig": {
+    "ext": "ts,js,json,hbs,html"
+  },
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
