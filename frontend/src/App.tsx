@@ -1,8 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const [message, setMessage] = useState('');
+
+  const handleClick = () => {
+    fetch('/test')
+      .then(res => res.text())
+      .then(setMessage);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +26,10 @@ function App() {
         >
           Learn React
         </a>
+        
+        <button onClick={handleClick}>Connected?</button>
+        <h1>{message}</h1>
+
       </header>
     </div>
   );
