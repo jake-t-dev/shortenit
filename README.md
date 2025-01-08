@@ -44,6 +44,10 @@ Pages:
 - Login Page
   - Enter Details
   - CTA to login
+- Password Reset
+  - Enter Email
+  - Password reset link 
+  - Password reset page
 - Dashboard
   - View Links
   - Edit Link
