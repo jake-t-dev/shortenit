@@ -35,6 +35,8 @@ API:
 
 ### Frontend Requirements
 
+Figma: https://www.figma.com/design/RMcjkrHknph31bPSZcO2ex/Design-Concepts?node-id=1669-162202&m=dev&t=QKqiUm83Si9jX97N-1
+
 Pages:
 
 - Home Page
