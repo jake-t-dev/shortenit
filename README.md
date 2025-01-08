@@ -2,6 +2,56 @@
 
 link shortener peer programming project using MERN stack
 
+## Development Plan
+
+### Tech Stack
+
+MongoDB
+
+ExpressJS
+
+ReactJS
+
+NodeJS
+
+### User Requirements
+
+Users must be able to: 
+
+- Create an Account, with their details securly stored in a db
+- Log-in to their Account
+- Create/View/Edit/Delete shortened links associated with their user account
+- Be able to share links and have anyone who uses the link redirected to the required website
+
+### Backend Requirements
+
+MongoDB instance with at least two collections:
+
+- Users collection to store documents holding user details
+- Links collection to store shortened links and originals to be redirected to
+
+API:
+ TODO
+
+### Frontend Requirements
+
+Pages:
+
+- Home Page
+  - Login
+- Login Page
+  - Enter Details
+  - CTA to login
+- Dashboard
+  - View Links
+  - Edit Link
+  - Create Link
+  - Delete Link
+- Account Page
+  - View Account Details
+  - Edit Account Details
+  - Delete Account
+
 ## Run Locally
 
 Clone the project
