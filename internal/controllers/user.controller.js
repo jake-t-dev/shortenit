@@ -1,5 +1,3 @@
-import { cp } from "fs";
-
 export const getUser = async (req, res) => {
   if (mongoose.Types.ObjectId.isValid(id) === false) {
     return res.status(404).json({ success: false, message: "User Not Found" });
@@ -8,6 +6,20 @@ export const getUser = async (req, res) => {
   try {
     const user = await User.findById(req.params.id);
     res.status(200).json(user);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+export const getUsers = async (req, res) => {
+  // validation that requesting user is an admin
+  if (req.user.role !== "admin") {
+    return res.status(403).json({ message: "Forbidden" });
+  }
+
+  try {
+    const users = await User.find();
+    res.status(200).json(users);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
